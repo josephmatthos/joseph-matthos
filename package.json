@@ -1,0 +1,41 @@
+{
+  "name": "josephmatthos",
+  "version": "1.0.0",
+  "description": "Plataforma oficial de Joseph Matthos — site, painel administrativo, loja de músicas e assinaturas.",
+  "private": true,
+  "main": "server.js",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node dev-server.js",
+    "hash-admin": "node scripts/hash-admin-password.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1150.0",
+    "@aws-sdk/s3-request-presigner": "^3.1150.0",
+    "@neondatabase/serverless": "^0.10.4",
+    "@upstash/ratelimit": "^2.2.0",
+    "@upstash/redis": "^1.41.0",
+    "drizzle-orm": "^0.44.7",
+    "express": "^4.22.3",
+    "howler": "^2.2.4",
+    "jsonwebtoken": "^9.0.3",
+    "music-metadata": "^12.2.3",
+    "resend": "^6.32.1",
+    "sigv4-lite": "^1.0.1",
+    "ws": "^8.22.2"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.0",
+    "dotenv": "^18.0.8",
+    "drizzle-kit": "^0.31.11",
+    "jsdom": "^25.0.0",
+    "typescript": "^7.0.2",
+    "vitest": "^2.1.0"
+  }
+}
